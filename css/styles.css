@@ -1,19 +1,17 @@
-:root {
-  --primary-font: "Roboto", sans-serif;
-  --second-primary-font: "Raleway", sans-serif;
-  --primary-color: #a1c487;
-  --secondary-color: #2e2f42;
-  --white-color: #ffffff;
-  --gray-background-color: #f4f4fd;
-  --accent-color: #4d5ae5;
-  --active-accent-background-color: #404bbf;
-  --gray-color: #8e8f99;
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
 }
 
-img {
+aside,
+nav,
+footer,
+header,
+section,
+main {
   display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 h1,
@@ -21,21 +19,58 @@ h2,
 h3,
 h4,
 h5,
+h6,
 p {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 ul,
-ol {
+ul li {
   list-style: none;
-  margin: 0px;
-  padding-left: 0px;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+.container {
+  max-width: 1215px;
 }
 
 .container {
-  min-width: 1140px;
+  min-width: 320px;
   max-width: 428px;
-  padding: 0 32px;
+  padding: 0 20px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1215px) {
+  .container {
+    width: 1215px;
+    max-width: 100%;
+    padding: 0 32px;
+    margin: 0 auto;
+  }
 }

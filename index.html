@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link
       rel="stylesheet"
@@ -25,62 +25,36 @@
   </head>
 
   <body>
-<!--  header -->
-
-    <header >
-      
-
-    </header>
+    <!-- <header></header> -->
 
     <main>
-     
+      <section class="sectio-one">
+        <div class="div-section-one container">
+          <h2 class="">
+            To order your vegetable basket, simply follow these easy steps
+          </h2>
+          <img
+            srcset="
+              ./images/desktop-vegetables.jpg,
+              ./images/mobile-vegetables.jpg
+            "
+            src="./images/desktop-vegetables.jpg"
+            alt="vegetables"
+            width="360"
+            height="300"
+          />
+          <p class="description">
+            Our baskets are assembled with care and delivered straight to your
+            doorstep, so you can enjoy the taste of fresh fruit without ever
+            leaving your home.
+          </p>
+          <p class="description">
+            Whether you're looking for a healthy snack or a thoughtful gift, our
+            fruit baskets are the perfect choice.
+          </p>
+        </div>
+      </section>
     </main>
-    <!-- footer -->
-    <footer class="footer">
-      
-    </footer>
-
-    <!-- modal window js -->
-
-    <div class="modal-window is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="close-window" data-modal-close>
-          <svg class="icon-close" width="8" height="8">
-            <use
-              href="./images/symbol-defs.svg#icon-close-black-18dp-2-1-1-1"
-            ></use>
-          </svg>
-        </button>
-
-       
-
-     <!-- modal window mobil -->
-
-     <div class="backdrop-mobil is-hidden data-modal">
-      <div class="modal-mobil">
-        <button type="button" class="close-window" data-modal-close>
-          <svg class="icon-close" width="8" height="8">
-            <use
-              href="./images/symbol-defs.svg#icon-close-black-18dp-2-1-1-1"
-            ></use>
-          </svg>
-         
-      </div>
-
-     </div>
-
-     <script
-     defer
-     src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-     crossorigin="anonymous"
-   ></script>
-   <script defer src="js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
-
-
-
-    
-    
+    <footer></footer>
   </body>
 </html>
