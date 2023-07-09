@@ -25,24 +25,41 @@
   </head>
 
   <body>
-    <section class="vegetables">
+    <section class="first-section">
       <div class="container vegetable-container">
-        <div class="vegetable-top">
+        <div class="vegetable-left">
           <h2 class="order-caption">
             To order your vegetable basket, simply follow these easy steps
           </h2>
           <img
+            class="order-img-desk"
             srcset="
-              ./images/mobile-vegetables.jpg,
-              ./images/desktop-vegetables.jpg
+              ./images/desktop-vegetables-1x-min.jpg 1x,
+              ./images/desktop-vegetables-2x-min.jpg 2x
             "
-            src="./images/mobile-vegetables.jpg"
-            alt="monitor"
-            width="360"
-            height="300"
+            src="./images/desktop-vegetables-min.jpg"
+            alt="vegetables"
+          />
+          <img
+            class="order-img-mob"
+            srcset="
+              ./images/mob-vegetables-1x-min.jpg 1x,
+              ./images/mob-vegetables-2x-min.jpg 2x
+            "
+            src="./images/tablet-vegetables-min.jpg"
+            alt="vegetables"
+          />
+          <img
+            class="order-img-tabl"
+            srcset="
+              ./images/tablet-vegetables-1x-min.jpg 1x,
+              ./images/tablet-vegetables-2x-min.jpg 2x
+            "
+            src="./images/tablet-vegetables-min.jpg"
+            alt="vegetables"
           />
         </div>
-        <div class="vegetable-bottom">
+        <div class="vegetable-right">
           <p class="order-text order-text-left">
             Our baskets are assembled with care and delivered straight to your
             doorstep, so you can enjoy the taste of fresh fruit without ever
